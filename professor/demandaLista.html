@@ -62,6 +62,7 @@
             <th scope="col">Orientadores</th>
             <th scope="col">Requisitos</th>
             <th scope="col">N° de Bolsas Requisitadas</th>
+            <th scope="col">Status</th>
           </tr>
         </thead>
         <tbody>
@@ -81,11 +82,11 @@
     <script>
         // Informações para preencher a tabela
         const demandas = [
-        { id: 1, data: '26/05/2005 13:00:00', disciplina: 'Matemática', orientadores: 'Prof. Silva', requisitos: 'Conhecimento avançado, 4° ano de informática para internet', bolsas: 2 },
-        { id: 2, data: '26/05/2005 13:00:00', disciplina: 'Física', orientadores: 'Prof. Oliveira', requisitos: 'Experiência em laboratório', bolsas: 1 },
-        { id: 3, data: '26/05/2005 13:00:00', disciplina: 'Biologia', orientadores: 'Prof. Santos', requisitos: 'Interesse em pesquisa, ter pago Biologia II', bolsas: 3 },
-        { id: 4, data: '26/05/2005 13:00:00', disciplina: 'Química', orientadores: 'Prof. Souza', requisitos: 'Conhecimento em análises químicas', bolsas: 2 },
-        { id: 5, data: '26/05/2005 13:00:00', disciplina: 'Informática', orientadores: 'Prof. Pereira', requisitos: 'Programação avançada', bolsas: 1 },
+        { id: 1, data: '26/05/2005 13:00:00', disciplina: 'Matemática', orientadores: 'Prof. Silva', requisitos: 'Conhecimento avançado, 4° ano de informática para internet', bolsas: 2, status: 'Aprovada' },
+        { id: 2, data: '26/05/2005 13:00:00', disciplina: 'Física', orientadores: 'Prof. Oliveira', requisitos: 'Experiência em laboratório', bolsas: 1, status: 'Em Análise'},
+        { id: 3, data: '26/05/2005 13:00:00', disciplina: 'Biologia', orientadores: 'Prof. Santos', requisitos: 'Interesse em pesquisa, ter pago Biologia II', bolsas: 3, status: 'Reprovada' },
+        { id: 4, data: '26/05/2005 13:00:00', disciplina: 'Química', orientadores: 'Prof. Souza', requisitos: 'Conhecimento em análises químicas', bolsas: 2, status: 'Reprovada' },
+        { id: 5, data: '26/05/2005 13:00:00', disciplina: 'Informática', orientadores: 'Prof. Pereira', requisitos: 'Programação avançada', bolsas: 1, status: 'Reprovada' },
         ];
 
         // preenche tabela
@@ -102,6 +103,7 @@
             <td>${demanda.orientadores}</td>
             <td>${demanda.requisitos}</td>
             <td>${demanda.bolsas}</td>
+            <td>${demanda.status}</td>
             `;
 
             tbody.appendChild(tr);
