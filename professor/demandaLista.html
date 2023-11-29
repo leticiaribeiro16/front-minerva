@@ -57,6 +57,7 @@
         <thead>
           <tr>
             <th scope="col">#</th>
+            <th scope="col">Data de solicitação</th>
             <th scope="col">Disciplina</th>
             <th scope="col">Orientadores</th>
             <th scope="col">Requisitos</th>
@@ -80,11 +81,11 @@
     <script>
         // Informações para preencher a tabela
         const demandas = [
-        { id: 1, disciplina: 'Matemática', orientadores: 'Prof. Silva', requisitos: 'Conhecimento avançado, 4° ano de informática para internet', bolsas: 2 },
-        { id: 2, disciplina: 'Física', orientadores: 'Prof. Oliveira', requisitos: 'Experiência em laboratório', bolsas: 1 },
-        { id: 3, disciplina: 'Biologia', orientadores: 'Prof. Santos', requisitos: 'Interesse em pesquisa, ter pago Biologia II', bolsas: 3 },
-        { id: 4, disciplina: 'Química', orientadores: 'Prof. Souza', requisitos: 'Conhecimento em análises químicas', bolsas: 2 },
-        { id: 5, disciplina: 'Informática', orientadores: 'Prof. Pereira', requisitos: 'Programação avançada', bolsas: 1 },
+        { id: 1, data: '26/05/2005 13:00:00', disciplina: 'Matemática', orientadores: 'Prof. Silva', requisitos: 'Conhecimento avançado, 4° ano de informática para internet', bolsas: 2 },
+        { id: 2, data: '26/05/2005 13:00:00', disciplina: 'Física', orientadores: 'Prof. Oliveira', requisitos: 'Experiência em laboratório', bolsas: 1 },
+        { id: 3, data: '26/05/2005 13:00:00', disciplina: 'Biologia', orientadores: 'Prof. Santos', requisitos: 'Interesse em pesquisa, ter pago Biologia II', bolsas: 3 },
+        { id: 4, data: '26/05/2005 13:00:00', disciplina: 'Química', orientadores: 'Prof. Souza', requisitos: 'Conhecimento em análises químicas', bolsas: 2 },
+        { id: 5, data: '26/05/2005 13:00:00', disciplina: 'Informática', orientadores: 'Prof. Pereira', requisitos: 'Programação avançada', bolsas: 1 },
         ];
 
         // preenche tabela
@@ -96,6 +97,7 @@
 
             tr.innerHTML = `
             <th scope="row">${demanda.id}</th>
+            <td>${demanda.data}</td>
             <td>${demanda.disciplina}</td>
             <td>${demanda.orientadores}</td>
             <td>${demanda.requisitos}</td>
